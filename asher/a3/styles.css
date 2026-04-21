@@ -1,0 +1,47 @@
+html {
+	background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/618/598/small_2x/floral-seamless-pattern-simple-hand-drawn-flowers-flat-color-style-leaves-pattern-vector.jpg);
+}
+body {
+	background: rgba(0, 102, 0,0.4);
+	padding: 5%;
+	font-family: arial;
+}
+table , td{
+    border: 3px solid rgb(0, 51, 0);
+    background: rgba(100, 150, 100, 0.7);
+    padding: 5px;border-collapse: collapse;
+    color: rgb(153, 255, 153);
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background: rgba(10, 40, 10, 0.6) ;
+}
+th, .header {
+    border: 3px solid rgb(0, 51, 0);
+    background: rgba(40, 80, 40, 0.8);
+    padding: 5px;border-collapse: collapse;
+    color: rgb(50, 182, 50);
+    text-align: center;
+    font-weight: bold;
+}
+h1, h2 {
+	color: rgb(10, 52, 10);
+    text-align: center;
+}
+.button {
+	padding: 15px;
+	border: 5px double black;
+	background: rgba(255, 255, 255, 0.6);
+	color: black;
+	border-radius: 10px;
+	text-decoration: /* underlined none */ none;
+	font-size: 1.5em; 
+	display: inline-block;
+ 	text-align: center;
+}
+
+
+		 	
+		 	
+		 	

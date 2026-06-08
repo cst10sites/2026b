@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: black; 
+font-family: Candara;
+}
+
+
+.center {
+  text-align: center;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px 40px;
+  border-radius: 10px;
+}

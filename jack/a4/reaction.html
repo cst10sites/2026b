@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reaction test</title>
+</head>
+
+<body onclick="clickTest()">
+
+    <button onclick="startTest(); event.stopPropagation();">Start</button> <!-- stop propagation is to ensure it only clicks once thanks chat gpt -->
+
+    <button id="score">press</button>
+
+    <script src="timer.js"></script>
+
+    <p id="highscore">highscore: </p>
+
+    <div>
+
+    <a href="calc.html" target="_self">bill total calculator</a>
+
+</body>
+</html>

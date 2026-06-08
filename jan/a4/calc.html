@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel ="icon" type= "image/x-icon" href="ostberlin.png"/>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel= "stylesheet" href= "calc.css">
+</head>
+<body>
+	<div class="container">
+	<h1>Tip Calculator</h1>
+	<form>
+		<label>Subtotal: $</label>
+		<input type="number" id="subtotal" step="0.05" min="1.00">
+	</form>
+	<p>Total after GST:</p><p id="firstOutput"></p>
+	<br>
+
+	<form>
+	    <label>Tip</label>
+	    <select id="tipValue">
+	        <option value="None">None (0%)</option>
+	        <option value="Fair">Fair (10%)</option>
+	        <option value="Good">Good (15%)</option>
+	        <option value="Excellent">Excellent (20%)</option>
+	    </select>
+	</form>
+	<p>Total after tip:</p><p id="secondOutput"></p>
+	<br>
+
+	<form>
+	    <label>Split</label>
+
+	    <select id="splitValue">
+	        <option value="1">None</option>
+	        <option value="2">2</option>
+	        <option value="3">3</option>
+	        <option value="4">4</option>
+	        <option value="5">5</option>
+	        <option value="6">6</option>
+	        <option value="7">7</option>
+	        <option value="8">8</option>
+	    </select>
+	</form>
+	<p>Total after split:</p><p id="thirdOutput"></p>
+	<br>
+	<input type="button" value="Submit" onclick="calculate()">
+	<input type="button" value="Reset" onclick="reset()">
+	<p>
+	To <a href="reaction.html"> reaction timer</a>
+	</p>
+	</div>
+<script src="calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow:
+    0 0 5px #ff4d4d,
+    0 0 10px #ff1a1a,
+    0 0 20px #ff0000,
+    0 0 40px #990000;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+input[type="button"] {
+  background: #444;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="button"]:hover {
+  background: #f00;
+  transform: scale(3.5);
+}
+
+input[type="fya"]:hover {
+  transform: scale(1.2);
+}
+
+input, select {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background: #444;
+  color: white;
+  font-size: 1rem;
+}

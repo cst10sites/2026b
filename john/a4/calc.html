@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="stylesheet" href="calc.css">
+	<link rel="icon" type="image/x-icon" href="favicon1.png">
+</head>
+<body>
+	<div class="container">
+	<form>
+		<h1>Tip Calculator</h1>
+		<label>Subtotal: $</label>
+		<input type="text" id="subtotal">
+		<label><br>Include PST?</label>
+		<input id="pst" type="checkbox"><br>
+
+		<p id="firstOutput"></p><br>
+		
+		<label>Select your tip percentage:</label><br>
+      	<input id="none" type="radio" name="tip" value="0">
+      	<label>None</label><br>
+      	<input id="fair" type="radio" name="tip" value="0.10">
+      	<label>Fair (10%)</label><br>
+      	<input id="average" type="radio" name="tip" value="0.15">
+		<label>Average (15%)</label><br>
+      	<input id="excellent" type="radio" name="tip" value="0.20">
+      	<label>Excellent (20%)</label><br>
+
+      	<p id="secondOutput"></p><br>
+
+      	<label>How many people will split the bill?</label>
+      	<select id="split" class="dropdown">
+          	<option value="1">1</option>
+		    <option value="2">2</option>
+		    <option value="3">3</option>
+		    <option value="4">4</option>
+		    <option value="5">5</option>
+		    <option value="6">6</option>
+		    <option value="7">7</option>
+		    <option value="8">8</option>
+		    <option value="9">9</option>
+		    <option value="10">10</option>
+     	</select><br>
+
+     	<p id="thirdOutput"></p><br>
+
+    	<br><input type="button" value="Submit" onclick="calculate()" class="button"><br><br>
+    	<input type="button" value="Reset" onclick="resetForm()" class="button"><br><br>
+	</form>
+	<a class="button" href="react.html" style="position: absolute; top: 99%; left: 50%; transform: translate(-50%, -50%);">Reaction Timer</a>
+</div>
+</body>
+<script src="calc.js"></script>
+</html>

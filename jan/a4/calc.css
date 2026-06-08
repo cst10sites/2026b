@@ -1,0 +1,25 @@
+ body {
+        font-family: Comic Sans ms;
+        margin: 0px 100px;
+        background: gray;
+        background-image: url("https://ifawartburg.se/wp-content/uploads/2014/10/gorbyland1.jpg");
+        background-size: 100% auto; /* stretch to fit */
+        background-size: 100% auto; /* stretch to fit */
+        background-repeat:no-repeat;
+}
+body {
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.75);
+    padding: 20px;
+}

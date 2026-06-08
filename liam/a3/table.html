@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--index.html-->
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks">
+          <a href="../Lesson1/index.html">Lesson 1</a>
+          <a href="../Lesson2/index.html">Lesson 2</a>
+          <a href="../Lesson3/index.html">Lesson 3</a>
+        </div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+      <div class="content">
+        <h1>Html Table</h1>
+        <h2>Common HTML Tags</h2>
+        <p> Click <a href="index.html">here</a> to return to the homepage. </p>
+        <h2>Tables</h2>
+        <table style="width: 80%;">
+          <tr>
+            <!--first row-->
+            <th style="width: 20%;">Tag</th>
+            <th style="width: 20%;">Definition</th>
+            <th style="width: 20%;">Examples</th>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;p&gt;&lt;/p&gt;</td>
+            <td>Makes a paragraph</td>
+            <td>
+              <p>&lt;p&gt;Hello world&lt;/p&gt;</p>
+            </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;h1&gt;&lt;/h1&gt; <br>&lt;h2&gt;&lt;/h2&gt; <br>... </td>
+            <td>It makes a heading H1 is the biggest and H6 is the smallest</td>
+            <td>
+              <h2>This is an h2</h2>
+            </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;br&gt;&lt;/br&gt;</td>
+            <td>It makes a break in HTML like pressing enter while typing</td>
+            <td>Hello <br>This is after a &lt;br&gt; </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;a href="link"&gt;...&lt;/a&gt;</td>
+            <td>Creates a hyperlink</td>
+            <td>
+              <a href="https://www.w3schools.com/">Click Here</a>
+            </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;img src="link" alt="pic"&gt;</td>
+            <td>Creates a image</td>
+            <td>
+              <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh" alt="dog_pic">
+            </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;iframe src="link"&gt; &lt;/iframe&gt;</td>
+            <td> Creates an embeded link </td>
+            <td>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5207.497464659541!2d-123.16672212453624!3d49.26220827138975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673aef44b8213%3A0xfed77b389f0f9a70!2sKitsilano%20Secondary%20School!5e0!3m2!1sen!2sca!4v1772651465763!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;hr&gt;</td>
+            <td>Creates a horizontal ruler</td>
+            <td>Like this
+              <hr>it is like an &lt;br&gt; with a line
+            </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;ol&gt; <br>&lt;li&gt; &lt;li&gt; <br>&lt;ol&gt; <br>
+            </td>
+            <td>Creates a ordered list</td>
+            <td>
+              <ol>
+                <li>Thing one</li>
+                <li>Thing two...
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;strong&gt;</td>
+            <td>Makes text bold</td>
+            <td>This has no stong <br>
+              <strong>This has stong</strong>
+            </td>
+          </tr>
+          <tr>
+            <!--subsequent rows-->
+            <td>&lt;i&gt;</td>
+            <td>Makes text italicized</td>
+            <td>This has no italic <br>
+              <i>This has italic</i>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

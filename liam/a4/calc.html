@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tip Calculator</title>
+	<!--need to link to calc.css-->
+	<link rel="stylesheet" href="calc.css">
+	 <link rel="Icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<form>
+	<div class="center-text">
+	
+	<h1>Tip Calculator</h1> 
+	<h3>By: Liam</h3>
+	<p>Subtotal</p>
+	<form>
+		<input type="text" id="subtotal">
+		<!--rest of the input objects belong into one form-->
+	</form>
+		<p>+ GST(5%)</p>
+		<p>After Tax Total:</p><p id="firstOutput"></p>
+
+		<br> <br>
+		<p>Tip</p>
+		<select id="tipValue"><!--no input for dropdown-->
+	        <option value="0">None: 0%</option>
+	        <option value="0.10">Fair: 10%</option>
+	        <option value="0.15">Average: 15%</option>
+	        <option value="0.20">Excellent: 20%</option>
+	    </select>
+
+		<p>After Tip Total:</p>
+		<p id="tipOutput"></p>
+			<br><br>
+
+		<p>Split</p>
+		<select id="splitValue"><!--no input for dropdown-->
+	        <option value="1">1</option>
+	        <option value="2">2</option>
+	        <option value="3">3</option>
+	        <option value="4">4</option>
+	    </select>
+
+		<p>After Tip Total:</p>
+		<p id="splitOutput"></p>
+
+
+
+
+
+
+	    <input type="button" value="Submit" onclick="calculate()">
+	    <input type="reset" value="Reset" onclick="clearOutputs()">
+	    <br>
+	    <a>>></a>
+	    <a class= "button" target ="blank" href="./reaction2.html">App 2</a>
+	   <a><<</a>
+	</div>
+</form>	
+	
+<script src="calc.js"></script>
+</body>
+</html>

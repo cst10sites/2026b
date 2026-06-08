@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica;
+    margin: 0px 100px;
+    background-color: grey;
+    background-image: url("https://4kwallpapers.com/images/wallpapers/gradient-background-3840x2160-10974.jpg");
+    background-size: 100% auto; /* stretch bg to fit */
+    background-repeat: repeat-y;
+}
+
+div.content {
+    background: rgba(255, 255, 255, 0.50);
+    padding: 25px;
+}
+/* Below is CSS for the dropdown navigation bar */
+
+div.topnav {
+    overflow: hidden;
+    background-color: darkgrey;
+    position: relative;
+}
+
+div.topnav #moreLinks {
+    display: none;
+    /* to hide by default */
+    /* display: block to show by default */
+}
+
+div.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+div.topnav a:hover {
+    color: black;
+    background-color: lightgrey;
+}
+
+div.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+table, th, td{
+
+    border: 3px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+td {
+font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+th {
+font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+    div {
+    }
+    
+            .button{ background-color: wheat;
+            color: #71816D;
+            text-align: center;
+            padding: 15px 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: inline-block;
+            border: 5px double;  border-color: #71816D;
+    }
+        .button:hover {
+                background-color: black;
+
+    }
+    img {
+  width: 50%;
+}

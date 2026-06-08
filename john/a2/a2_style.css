@@ -1,0 +1,72 @@
+body {
+	background-color: black;
+	margin: 25px 125px;
+	color: white;
+    font-family: "courier new";
+}
+
+div {
+	background-color: skyblue;
+	color: black;
+	box-sizing: border-box;
+	margin: 20px 20px 15px 15px;
+	padding: 15px 25px;
+	border-width: 10px;
+	border-color: whitesmoke;
+	border-style: solid;
+	box-shadow: 15px 10px 20px darkgray;
+}
+
+.float_left {
+	float: left;
+	width: 29%;
+	height: 475px;
+	padding: 20px;
+	background: lightcoral;
+	box-sizing: border-box;
+}
+
+.float_right {
+	float: right;
+	width: 65%;
+	height: 475px;
+	padding: 20px;
+	background: lightcoral;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "courier new";
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+
+p, li {
+	font-family: "courier new";
+	color: black;
+	text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+
+.center_text {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.grid_item {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.grid_item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

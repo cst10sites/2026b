@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--index.html-->
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <!--Internal CSS has been moved to style.css-->
+    <style></style>
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks">
+          <a href="../lession1/index.html">Lesson 1</a>
+          <a href="../lession2/index.html">Lesson 2</a>
+          <a href="../lession3/index.html">Lesson 3</a>
+        </div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+      <div class="content">
+        <h1>HTML/CSS Guide</h1>
+        <h2>Common HTML Tags</h2>
+        <p> The code for the navigation bar is provided. It requires JavaScript which we learn later. This example demonstrates a simple dropdown menu for many modern and mobile websites. Make a copy of this code if you plan to modify it. </p>
+        <h2>External CSS</h2>
+        <p> Internal and inline CSS define the look of a page (or a section of a page). In contrast, external CSS defines the rules for a collection of pages (i.e. website). External CSS uses a separate file containing the CSS and all pages within a website read from this file. </p>
+        <p> External CSS can also be used to reduce the amount of code inside an HTML file. </p>
+        <h2>Embedding External Content</h2>
+        <p> The most common way to embed external media is to use the iframe element. For YouTube videos, use the Share button followed by Embed to get the code. This method often produces an error in the validator. Also, not all videos can be embedded. </p>
+        <br>
+        <h2>Tables</h2>
+        <h2> Click --> <a class="button" target="blank" href="../a3/table.html">Table</a> To learn more! </h2>
+      </div>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

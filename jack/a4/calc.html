@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+	<script src="calc.js"></script>
+
+	<video autoplay muted loop id="bg-video">
+    <source src="bg.mp4" type="video/mp4"> // thanks chat gpt for making it a back ground in style
+	</video>
+
+	<audio controls autoplay loop>
+  	<source src="mus.mp3" type="audio/mpeg">
+	</audio>
+
+	<p>meal cost</p>
+	<form>
+		<input type="text" id="subtotal">
+	</form>
+
+	<p>+ GST(5%)</p>
+	<p id="taxamount"></p>
+
+	<form>
+	    <p>Tip %</p>
+	    <select id="tipvalue">
+	    	<option value="0">0%</option>
+			<option value="0.10">10%</option>
+			<option value="0.15">15%</option>
+			<option value="0.20">20%</option>
+	    </select>
+	    <br>
+	</form>
+
+
+
+	<form>
+	    <p>split between</p>
+	    <select id="people">
+	    	<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+	    </select>
+	    <p> people </p>
+	    <br>
+	</form>
+
+	<input type="button" value="Submit" onclick="calculate()">
+
+	<br>
+
+	<p id="final"></p>
+	<p id="totalamount"></p>
+
+	<br>
+	<div class="fya">
+  	<img src="fya.gif">
+  	<img src="fya.gif">
+  	<img src="fya.gif">
+ 	 <img src="fya.gif">
+  	<img src="fya.gif">
+	</div>
+
+	<br>
+
+	<a href="reaction.html" target="_self">reaction test</a>
+	<p>my special modification is that it declines non number values and doesnt display NaN</p>
+
+
+</body>
+</html>
+

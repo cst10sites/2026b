@@ -1,0 +1,54 @@
+/* style.css */
+
+body {
+    font-family: Arial, Helvetica;
+    margin: 0px 100px;
+    background-color: darkgreen;
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.8Vgh1oM2iTQsou_oOdd6ZQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: 100% auto; /* stretch bg to fit */
+    background-repeat: repeat;
+}
+
+.button {
+    background-color: mintcream;
+    color: green;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 2em;
+    display: inline-block;
+    border: 5px solid green;
+}
+
+
+
+div.content {
+    background: rgba(255, 255, 255, 0.50);
+    padding: 25px;
+}
+
+/* Below is CSS for tables */
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    font-size: 1.2em;
+    font-family: Verdana;
+    /* background-color: rgba(0, 0, 0, 0.33); */
+}
+
+
+
+/* alternating colors */
+tbody tr:nth-child(even) {
+    background-color: rgba(150, 180, 0, 0.5);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(100, 200, 0, 0.5);
+}

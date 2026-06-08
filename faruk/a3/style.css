@@ -1,0 +1,37 @@
+/* style.css */
+
+body {
+    font-family: Arial, Helvetica;
+    margin: 0px 100px;
+    background-color: grey;
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.7TEdI0WX6nBjtjQAoKmmnwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: 130% auto;
+    background-repeat: no-repeat;
+}
+
+div.content {
+    background: rgba(255, 255, 255, 0.50);
+    padding: 25px;
+}
+
+
+
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th {
+    font-size: 1.2em;
+    font-family: Verdana;
+    
+}
+h1,h2,p {text-align: center;}
+
+
+

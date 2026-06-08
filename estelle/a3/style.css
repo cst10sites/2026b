@@ -1,0 +1,49 @@
+body {
+                font-family: "Comic Sans MS";
+                main: 0px 100px;
+                background-color: grey;
+                background-image: url("https://static.vecteezy.com/system/resources/previews/002/233/421/large_2x/abstract-pattern-repeat-background-template-free-vector.jpg");
+                background-size: 100% auto;
+                background-repeat: repeat-y;
+}
+
+div.exa{
+   color:blueviolet;
+}
+
+
+table, th, td {
+                 border: 4px ridge white;
+                 border-collapse: collapse;
+                 padding: 5px;
+                 font-family: "Comic Sans MS";
+                 text-align: center;
+
+             }
+
+             th {
+                font-size: 1.2em;
+                background-color: rgba(240, 240, 255, 1);
+             }
+
+             td {
+                font-size: 1.2em;
+                background-color: rgba(230, 230, 236, 1);
+             }
+
+
+div.example{
+   font-family: Papyrus;
+}
+
+.button {
+            background-color: darkslateblue;
+            color: powderblue;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: inline-block;
+            border: 7px ridge steelblue;
+            text-align: center;
+         }

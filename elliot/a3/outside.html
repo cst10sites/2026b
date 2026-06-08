@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--index.html-->
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <!--Internal CSS has been moved to style.css-->
+    <style>
+      .invert {
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="content">
+      <h1>Asignment 3</h1>
+      <h2>Back to Home</h2>
+      <br>
+      <a class="button" href="index.html">Last page</a>
+      <br>
+      <table style="width: 80%;">
+        <tr>
+          <!--first row-->
+          <th style="width: 40%;">Tag</th>
+          <th style="width: 20%;">Definition</th>
+          <th style="width: 20%;">Examples</th>
+        </tr>
+        <tr>
+          <!--subsequent rows-->
+          <td>
+            <H2>&lt;!DOCTYPE html&gt;</H2>
+          </td>
+          <td>This is tells the file that this is html</td>
+          <td>&lt;!DOCTYPE html&gt;(I can't show an example)</td>
+        </tr>
+        <tr>
+          <!--subsequent rows-->
+          <td>
+            <H2>&lt;html lang="en"&gt;</H2>
+          </td>
+          <td>This sets the base language to english</td>
+          <td>This page is set to “en” for English. This tag helps websites such as Google Translate know the default language for this page is English.</td>
+        </tr>
+        <tr>
+          <!--subsequent rows-->
+          <td>
+            <H2>&lt;meta charset="UTF-8&gt;</H2>
+          </td>
+          <td>This tells the website how to read the characters on the page</td>
+          <td>&lt;meta charset="UTF-8&gt;(I can't show an example)</td>
+        </tr>
+        <tr>
+          <!--subsequent rows-->
+          <td>
+            <H2>&lt;title&gt;&lt;/title&gt;</H2>
+          </td>
+          <td>The title is the name at the top of the page</td>
+          <td>
+            <img alt="title" style="width: 300px;" src="https://www.w3schools.com/html/img_favicon.png">
+          </td>
+        </tr>
+        <tr>
+          <!--subsequent rows-->
+          <td>
+            <H2>&lt;style&gt;</H2>
+          </td>
+          <td>This can be used to change the color, font and other things in html</td>
+          <td class="invert">Internal CSS was used to invert color: <br> &lt;style&gt; <br> .invert { <br> background-color: black; <br> color: white; <br> } <br> &lt;style&gt; </td>
+        </tr>
+        <tr>
+          <!--subsequent rows-->
+          <td>
+            <H2>.varible</H2>
+          </td>
+          <td>This is a varible and can be used for buttons and other things</td>
+          <td>
+            <a class="button" href="index.html">Last page</a>This takes you back to the first page
+          </td>
+        </tr>
+        <tr>
+          <!--subsequent rows-->
+          <td>
+            <H2>&lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;</H2>
+          </td>
+          <td>A favicon is the little image at the top of a website and is stored in outside.html</td>
+          <td>
+            <img alt="favicon" style="width: 300px;" src="https://www.w3schools.com/html/img_favicon.png">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

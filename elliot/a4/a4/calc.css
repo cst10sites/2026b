@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica;
+    margin: 0px 100px;
+    background-color: lemonchiffon;
+    /*background-image: url("https://wallpapercave.com/wp/irbvqB4.jpg");*/
+    background-size: 100% auto; /* stretch bg to fit */
+    background-repeat: no-repeat;
+}
+
+div {
+  width: 25%px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}

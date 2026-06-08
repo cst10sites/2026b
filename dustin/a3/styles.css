@@ -1,0 +1,34 @@
+h1 {
+    color: lightblue;
+    border-color: blue;
+}
+
+
+body {
+    background-color: beige;
+}
+
+.button {
+            color: beige;
+            font-size: 1.2em; 
+            background-color: blueviolet;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 30px;
+            border: 5px double blue;
+            border-radius: 30px;            
+            display: inline-block;
+        }
+
+        table, th, td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+    background-color: ;
+    }
+
+
+        th {
+    font-size: 1.2em;
+    font-family: Verdana;
+   
+    }

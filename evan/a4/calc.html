@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Assignment 4 App 1</title>
+    <!--need to link to calc.css-->
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <form>
+      <input type="text" id="subtotal">
+      <p id="firstOutput"></p>
+      <p>Select Tip:</p>
+      <input type="radio" name="tip" value="0.10"> 10% <input type="radio" name="tip" value="0.15"> 15% <input type="radio" name="tip" value="0.20"> 20% <p>Split between how many people?</p>
+      <input type="text" id="people">
+      <p id="tipOutput"></p>
+      <p id="finalOutput"></p>
+      <input type="button" value="Submit" onclick="calculate()">
+    </form>
+    <script src="calc.js"></script>
+    <a href="index.html">Go to reaction timer</a>
+  </body>
+</html>

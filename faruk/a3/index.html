@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="icon" type="image/x-icon" href="ohio.ico">
+    <style></style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1> HTML/CSS Guide </h1>
+    <h2> Common HTML Tags Inside &lt;body&gt; </h2>
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none";
+        } else {
+          links.style.display = "block";
+        }
+      }
+    </script>
+    <p> This page will be redirected to <a href="outside.html">outside</a> if you click
+    <div>
+      <p>
+      <table style="width: 80%;">
+        <tr>
+          <!--first row-->
+          <th style="width: 33%;">&lt;body&gt; Tags</th>
+          <th style="width: 33%;">Definition</th>
+          <th style="width: 34%;">Example(s)</th>
+        </tr>
+        <tr>
+          <td>&lt;h1&gt;...&lt;/h1&gt;</td>
+          <td>Creates the largest type of heading</td>
+          <td>
+            <h1>Heading 1</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;em&gt;...&lt;/em&gt;</td>
+          <td>Emphasizes Text</td>
+          <td>
+            <em>Emphasizes Text</em>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;p&gt;...&lt;/p&gt;</td>
+          <td>Creates a paragraph</td>
+          <td>
+            <p>This is a paragraph</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;br&gt;</td>
+          <td>Creates a lign break</td>
+          <td>Line 1:Hello <br>Line 2:Hello </td>
+        </tr>
+        <tr>
+          <td>&lt;hr&gt;</td>
+          <td>Creates a horizontal lign</td>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;img src="link" alt="pic"&gt;</td>
+          <td>Inputs an image of your choice</td>
+          <td>
+            <img src="https://th.bing.com/th/id/OIP.-DWyo_ZfWVIsg_SxqIcoLAHaNJ?w=115&h=183&c=7&r=0&o=7&pid=1.7&rm=3" alt="pic">
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;a href="link"&gt;…&lt;/a&gt;</td>
+          <td>Creates a hyperlink</td>
+          <td>
+            <a href="https://www.vsb.bc.ca/">VSB</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;li&gt;…&lt;/li&gt;</td>
+          <td>Lists items</td>
+          <td>
+            <ul>
+              <li>hi</li>
+              <li>hello</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;span&gt;…&lt;/span&gt;</td>
+          <td>Changes colors of specific text for styling purposes</td>
+          <td>
+            <p>My friend has <span style="color:blue">blue</span> eyes </p>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;ol&gt;...&lt;/ol&gt;</td>
+          <td>Creates an ordered list</td>
+          <td>
+            <ol>
+              <li>hi</li>
+              <li>hi</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

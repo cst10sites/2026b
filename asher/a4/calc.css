@@ -1,0 +1,25 @@
+div {
+	border: solid darkred; 5px;
+	color: brown;
+	background-color: darkorange;
+	padding: 5px;
+	margin: 50px;
+	text-align: center;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+body {
+	background-color: lightgoldenrodyellow;
+	background-image: url(https://th.bing.com/th/id/OIP.hR096ThpTBAIkI9KtfM9_gHaHa?w=175&h=180&c=7&r=0&o=7&pid=1.7&rm=3);
+
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;

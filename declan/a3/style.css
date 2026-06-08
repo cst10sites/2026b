@@ -1,0 +1,42 @@
+body {
+    font-family: Verdana;
+   text-align:center;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwNzQtMDA4LWt2a2QwaXh0LmpwZw.jpg");
+
+
+
+}
+div.exa{
+            background-color: cadetblue;
+            padding: 15px 25px;
+            border-color: white;
+            border-width: thick; /* thin medium */
+           font-family: papyrus;
+        }
+div.header{
+   text-shadow: cadetblue 3px 3px;
+   background-color: gray;
+   padding: 10px 10px;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: centre;
+    margin: 5% 10%;
+    background-color: gray;
+}
+   
+        table{
+            box-shadow: cadetblue 10px 10px;
+        }
+
+
+        .button {
+            color: gray;
+            font-size: 4em; /* 1em = standard size*/
+            background-color: cadetblue;
+            padding: 15px 30px;
+            border-radius: 30px;            
+        }

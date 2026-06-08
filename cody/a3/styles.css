@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica;
+    margin: 0px 100px;
+    background-color: #D9D9D9;
+    }
+
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle ;
+}
+
+th {
+    font-size: 1 em;
+    font-family: Verdana;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+td:hover, th:hover {
+    background-color: #cfcfcf;
+}

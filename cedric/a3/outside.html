@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>assignment 3</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <style>
+            .invert {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>common HTML tags outside the body</h1>
+        <table>
+            <tr>
+                <th style="width: 33%;">tag</th>
+                <th style="width: 33%">definition</th>
+                <th style="width: 33%">example</th>
+            </tr>
+
+            <tr>
+                <th>&lt;!doctype HTML></th>
+                <th>tells the browser that the information below is in HTML 5</th>
+                <th>no examples</th>
+            </tr>
+            <tr>
+                <th>&lt;HTML lang="en"></th>
+                <th>a set of characters that the browser can use</th>
+                <th>
+                    This page is set to “en” for English. This tag helps websites such as Google Translate know the
+                    default language for this page is English.
+                </th>
+            </tr>
+            <tr>
+                <th>&lt;meta charset="UTF-8"></th>
+                <th>lets the browser read your code</th>
+                <th>no example</th>
+            </tr>
+            <tr>
+                <th>&lt;meta http-equiv="refresh" content="0; url=$URL"></th>
+                <th>time delay for page redirection</th>
+                <th>no examples</th>
+            </tr>
+            <tr>
+                <th>&lt;title>...&lt;/title></th>
+                <th>the title at the top of the tab</th>
+                <th>look at the top of the tab</th>
+            </tr>
+            <tr>
+                <th>&lt;style>&lt;/style></th>
+                <th>section that describes the internal CSS of the page</th>
+                <th class="invert">&lt;style> .invert{ background-color: black; color: white; } &lt;/style></th>
+            </tr>
+            <tr>
+                <th>&lt;link rel="stylesheet" href="style.css"></th>
+                <th>tag that points to an external css file</th>
+                <th>
+                    The homepage and this page point to a common style.css file that controls the look of these pages.
+                </th>
+            </tr>
+            <tr>
+                <th>&lt;link rel="icon" type="image/x-icon" href="favicon.ico"></th>
+                <th>tag that adds a favicon</th>
+                <th>look at the tab the image there is a favicon</th>
+            </tr>
+        </table>
+        <p><a class="button" href="index.html">index</a></p>
+    </body>
+</html>

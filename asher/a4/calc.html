@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+	<div>
+	<h1>Tip Calculator</h1>
+	<form>
+		<label>Subtotal: $</label>
+		<input type="text" id="subtotal">
+		<p id="firstOutput"></p>
+		<!--rest of the input objects belong into one form-->
+		
+	</form>
+	<hr>
+	<br>
+	<form>
+		<label>Calculate tip before tax and save $$$?</label>
+		<input type="checkbox" value="yes?" id="cheap">
+		<br>
+		<br>
+		<select id="selectTip">
+			<option id="blank2" class="blank">-- Select an option --</option>
+			<option value="0" id="none"> <small>disrespectful</small> (none) :( </option>
+			<option value="0.1" id="10%"> <small>some</small> (10%) ¯_(ツ)_/¯ </option>
+			<option value="0.15" id="15%"> adequate (15%) :) </option>
+			<option value="0.185" id="18.5%"> Generous (18.5%) :O </option>
+			<option value="0.2" id="20%"> <em>Fine</em> (20%) &#128519;  </option>
+			<option value="0.25" id="25%"> <strong>Extravagant</strong> (25%) &#128142;</option>
+		</select>
+		<br>
+		<p id="secondOutput"></p>
+	</form>
+	<br>
+	<hr>
+	<br>
+	<form>
+		<label>Select The Amount of Paying People In Your Party</label>
+		<br>
+		<br>
+		<select id="selectPay">
+			<option id="blank">-- Select an option --</option>
+			<option value="1">Just you (1)</option>
+			<option value="2">You and a friend (2)</option>
+			<option value="3">The fam (3)</option>
+			<option value="4">The inner circle (4)</option>
+			<option value="5">A Group (5)</option>
+			<option value="6">The family + relative(s) (6)</option>
+			<option value="7">A small party (7)</option>
+			<option value="8">Reunion of some kind (8)</option>
+			<option value="9">Party (9)</option>
+			<option value="10">Office meeting (10)</option>
+		</select>
+		<br>
+		<p id="thirdOutput"></p>
+	</form>
+	<br>
+	<hr>
+	<br>
+	<form>
+		<input type="button" value="Submit" onclick="calculate()">
+		<input type="button" value="Reset" onclick="reset1()">
+	</form>
+	</div>
+	<footer><a target="_blank" href="reaction.html">Test Your Reaction Speed!</a></footer>
+	<!--need to move code to calc.js-->
+	<script src="calc.js"> </script>
+
+</body>
+</html>

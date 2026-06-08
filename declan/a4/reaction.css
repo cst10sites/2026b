@@ -1,0 +1,21 @@
+body {
+    font-family: papyrus;
+   text-align:center;
+    color: blanchedalmond;
+            background-color: cadetblue;
+            padding: 15px 30px;
+            border-radius: 30px;            
+                                    }
+div {
+        size: 100%,100%;
+
+
+                                    }
+button {
+        color: gray;
+         font-size: 100em;
+        background-color: gray;
+        padding: 15px 30px;
+         border-radius: 30px;   
+         border: 3px solid black;         
+                        }

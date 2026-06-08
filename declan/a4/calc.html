@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<!--need to link to calc.css-->
+	 <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+	<br>
+	<form>
+		<input type="text" id="subtotal">
+		<br>
+			<label id="firstOutput"></label>
+			<br>
+			<label id="secondOutput"></label>
+			<br>
+	    <label>what percent tip?</label>
+	    <br>
+	    <!-- id in select, value in option-->
+	    <select id="tax"><!--no input for dropdown-->
+	        <option value="0">0%</option>
+	        <option value="0.1">10%</option>
+	        <option value="0.15">15%</option>
+	        <option value="0.2">20%</option>
+	    </select>
+	    <br>
+	    <label id="thirdOutput"></label>
+	   <br>
+	    <label for="vol">amount of people</label>
+	     <input type="range" id="people" name="vol" min="1" max="8">
+	     <label id ="peopleOutput"></label>
+	     
+	    <br>
+	<input type="button" value="Submit" onclick="calculate()">
+<input onclick="resets()" type="reset">
+		<br>
+		<label id="fourthOutput"></label>
+		<!--rest of the input objects belong into one form-->
+		
+	</form>
+
+
+  <a style="float: right;" class="button" href="../a4/reaction.html">----&gt;</a>
+
+	<script src="calc.js"></script>
+
+
+</body>
+</html>

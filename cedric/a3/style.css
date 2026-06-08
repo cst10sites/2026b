@@ -1,0 +1,1 @@
+table, th, tr{ border: 2px solid silver; padding: 3px; border-collapse: collapse; } .button { background-color: green; color:purple; padding:15px 30px; border-radius: 5px; text-decoration: none; /*underline*/ font-size: 2em;/* 1em=standard size*/ display: inline-block; border: thin double green; text-align: center; }

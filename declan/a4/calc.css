@@ -1,0 +1,19 @@
+body {
+    font-family: papyrus;
+   text-align:center;
+    color: blanchedalmond;
+            background-color: cadetblue;
+            padding: 15px 30px;
+            border-radius: 30px;            
+        }
+        label{
+        	font-size: 1.5em; /* 1em = standard size*/
+        }
+          button {
+            color: gray;
+            font-size: 4em; /* 1em = standard size*/
+            background-color: cadetblue;
+            padding: 15px 30px;
+            border-radius: 30px;            
+        }
+      

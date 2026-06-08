@@ -1,0 +1,16 @@
+body{
+	text-align: center;
+}
+a{
+
+			background-color: ivory;
+	 		color:black;
+	 		font-size: 2em;
+	 		border-radius: 5px;
+	 		text-decoration: none; /*underline*/
+	 		font-size: 2em;/* 1em=standard size*/
+	 		display: inline-block;
+	 		border: thin double black;
+	 		text-align: center;
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="stylesheet" href="calc.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!--need to link to calc.css-->
+	
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+	<form>
+		<label>$</label>
+		<input type="text" id="subtotal">
+		<!--rest of the input objects belong into one form-->
+	
+
+	</form>
+	<p>gst=5%</p>
+	<p id="secondOutput"></p>
+<form>
+	 <br><br><br>
+	    <label>select your tip</label>
+	    <!-- id in select, value in option-->
+	    <select id="tip"><!--no input for dropdown-->
+	        <option value="0">0%</option>
+	        <option value="10">10%</option>
+	        <option value="15">15%</option>
+	        <option value="20">20%</option>
+	    </select>
+<p id="thirdOutput"></p>
+	 
+	</form>
+	 <br><br><br>
+<form>
+	<label># of people split</label>
+	  <select id="split"><!--no input for dropdown-->
+	        <option value="1">1</option>
+	        <option value="2">2</option>
+	        <option value="3">3</option>
+	        <option value="4">4</option>
+	        <option value="5">5</option>
+	        <option value="6">6</option>
+	        <option value="7">7</option>
+	        <option value="8">8</option>
+	    </select>
+	    <p id="firstOutput"></p>
+	      	<br>
+	      	<input type="button" value="Submit" onclick="calculate()">
+	   </form>
+	   	<input type="button" value="reset" onclick="reset()">
+	   	<br>
+	   <input type="button" value="link" onclick="move12()">
+	   	<!--need to move code to calc.js-->
+	<script src="calc.js"></script>
+
+</body>
+</html>
+

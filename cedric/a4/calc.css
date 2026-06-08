@@ -1,0 +1,28 @@
+body{
+    background-color: ivory;
+    background-size: 100% auto; /* stretch bg to fit*/
+    background-repeat: no-repeat; /*repeat-y */
+    text-decoration-color: gold;
+   text-align: center;
+}
+body{
+	background-color: aqua;
+	margin:25px 500px;
+	padding:15px 20px;
+	border-color: white;
+	border-width: thick; /*border can be thick medium or thin*/
+	border-style: solid; /* border can be dashed dotted doubled or ridge*/
+	border-radius: 5px;
+		}
+}
+.button{
+			background-color: yellowgreen;
+	 		color:black;
+	 		padding:15px 30px;
+	 		border-radius: 5px;
+	 		text-decoration: none; /*underline*/
+	 		font-size: 2em;/* 1em=standard size*/
+	 		display: inline-block;
+	 		border: thin double white;
+	 		text-align: center;
+}

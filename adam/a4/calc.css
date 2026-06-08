@@ -1,0 +1,16 @@
+body{
+	text-align: center;
+	background-color: cornflowerblue;
+	font-size: 17px;
+	font-family: Arial;
+}
+
+div.main{
+	width: 25px;
+	border: 10px solid darkgreen;
+	padding: 40px;
+	margin: 15px;
+	background-color: bisque;
+	display: inline-block;
+	padding: 60px 80px;
+}

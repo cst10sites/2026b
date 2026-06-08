@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+    <style>
+      /* Hide the default cursor */
+      body {
+        cursor: none;
+      }
+
+      /* sprite that follows the mouse */
+      #sprite {
+        position: fixed;
+        width: 50px;
+        pointer-events: none;
+        /* mouse clicks go through it */
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1> About Me </h1>
+    <p>
+      <em> With deep gratitude and respect, we are honoured to be learning and unlearning on the ancestral and unceded lands of the xʷməθkʷəy̓əm (Musqueam) , Sḵwxwú7mesh Úxwumixw (Squamish Nation) & səlilwətaɬ (Tsleil-Waututh Nation).</em>
+    </p>
+    <hr>
+    <p> my name is yogurt and I enjoy playing <a target="_blank" href="https://archive.org/details/the-binding-of-isaac_202111">video games</a> i play soccer 3 times a week and go to the gym biweekly and I enjoy celebrating my birthday on junurary 47 2028 additionally I like staring at optical illusions. Also i like dnd heres the dnd wiki for you: <a target="_blank" href="https://en.wikipedia.org/wiki/Dungeons_%26_Dragons">
+        <img alt="dnd stuff" style="width:150px;" src="https://png.pngtree.com/png-clipart/20231005/original/pngtree-watercolor-magic-book-png-image_13124095.png">
+      </a>
+    </p>
+    <hr>
+    <p> I chose this course entirely so I could learn about making video games and coding better.I have heard rumors about me making <a target="_blank" href="https://geekprank.com/fake-virus/">viruses</a> this is completely untrue. In this course i have learned to code in html. </p>
+    <img alt="if you can see this then spin around 10 times and you'll feel the same" style="width:375px;" src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2021/05/Spin-Illusion-1.jpg?w=750">
+    <!-- mouse-following sprite -->
+    <img id="sprite" alt="sprite" src="https://media.tenor.com/yo5gVsnt5z4AAAAj/silksong-hollow-knight.gif">
+    <script>
+      const sprite = document.getElementById("sprite");
+      document.addEventListener("mousemove", (e) => {
+        sprite.style.left = e.clientX + "px";
+        sprite.style.top = e.clientY + "px";
+      });
+    </script>
+  </body>
+</html>

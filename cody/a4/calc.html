@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Assignment 4 App 1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <form>
+      <input type="text" id="subtotal" placeholder="Enter Amount Here">
+      <h3> +5% GST tax </h3>
+      <h4> After tax total: </h4>
+      <p id="firstOutput"></p>
+      <label>Tip Amount:</label>
+      <br>
+      <select id="tipValue">
+        <option value="0">0%</option>
+        <option value="8">8%</option>
+        <option value="15">15%</option>
+        <option value="18">18%</option>
+        <option value="20">20%</option>
+      </select>
+      <br>
+      <label>Split:</label>
+      <br>
+      <select id="split">
+        <option value="1">1 person</option>
+        <option value="2">2 people</option>
+        <option value="3">3 people</option>
+        <option value="4">4 people</option>
+        <option value="5">5 people</option>
+        <option value="6">6 people</option>
+        <option value="7">7 people</option>
+        <option value="8">8 people</option>
+      </select>
+      <h4> Total: </h4>
+      <p id="secondOutput"></p>
+      <br>
+      <input type="button" value="Submit" onclick="calculate()">
+    </form>
+    <script src="script.js"></script>
+    <a href="reaction.html">Go to reaction.html</a>
+  </body>
+</html>

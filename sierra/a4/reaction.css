@@ -1,0 +1,25 @@
+div{
+	background: rgba(0, 0, 0, 0.50); 
+	color: white;
+	padding: 20px;
+	font-family: 'Papyrus';
+	text-align: center;
+}
+
+.button {
+	background-color: rgba(0, 0, 0, 0.50);
+	color: white;
+	padding: 15px 30px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-size: 2em; /*1em is normal*/
+	display: inline-block;
+	border: 5px solid black;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+}
+
+.button:hover {
+	background-color: rgba(8, 98, 151, 0.50);
+}

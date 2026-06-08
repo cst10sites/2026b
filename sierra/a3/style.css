@@ -1,0 +1,31 @@
+
+table, th, td{
+	border: 1px solid;
+	border-collapse: collapse;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+th, td{
+	padding: 20px;
+}
+
+body{
+	background-image: url("https://wallpaperaccess.com/full/2711216.jpg");
+}
+
+.button {
+	background-color: darkblue 50%;
+	color: white;
+	padding: 15px 30px;
+	text-decoration: none;
+	font-size: 2em; /*1em is normal*/
+	display: inline-block;
+	border-radius: 60%;
+	border: 5px solid white;
+	text-align: center;
+}
+
+.button:hover{
+	color: darkblue;
+	border: 5px solid darkblue;
+}

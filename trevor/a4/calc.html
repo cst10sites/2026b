@@ -1,0 +1,284 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+  <link rel="stylesheet" href="cal.css">
+
+  <meta charset="UTF-8" /> 
+
+  
+
+  <title>Tip Calculator</title> 
+
+  <style> 
+
+    body { 
+
+      margin: 0; 
+
+      font-family: Goldman, serif; 
+
+      background-color: #add8e6; 
+
+      display: flex; 
+
+      justify-content: center; 
+
+      align-items: center; 
+
+      min-height: 100vh; 
+
+      color:#000000 ; 
+
+    } 
+
+ 
+
+    .calculator { 
+
+      text-align: center; 
+
+      padding: 20px; 
+
+      width: 320px; 
+
+    } 
+
+ 
+
+    h1 { 
+
+      font-size: 38px; 
+
+      margin-bottom: 25px; 
+
+      font-weight: bold; 
+
+    }   
+
+ 
+
+    label { 
+
+      display: block; 
+
+      margin-top: 15px; 
+
+      font-size: 20px; 
+
+    } 
+
+ 
+
+    input, 
+
+    select { 
+
+      margin-top: 8px; 
+
+      padding: 5px; 
+
+      width: 140px; 
+
+      font-size: 16px; 
+
+      text-align: center; 
+
+    } 
+
+ 
+
+    .result { 
+
+      margin-top: 15px; 
+
+      font-size: 22px; 
+
+    } 
+
+ 
+
+    .buttons { 
+
+      margin-top: 30px; 
+
+    } 
+
+ 
+
+    button { 
+
+      padding: 8px 14px; 
+
+      font-size: 16px; 
+
+      margin: 5px; 
+
+      cursor: pointer; 
+
+    } 
+
+  </style> 
+
+</head> 
+
+<body> 
+
+ 
+
+  <div class="calculator"> 
+
+    <h1>Tip Calculator</h1> 
+
+ 
+
+    <label for="subtotal">Subtotal:</label> 
+
+    <input type="number" id="subtotal" placeholder="Enter amount" step="0.01" /> 
+
+ 
+
+    <div class="result" id="taxAmount">+ GST(5%): $0.00</div> 
+
+    <div class="result" id="afterTax">After Tax Total: $0.00</div> 
+
+ 
+
+    <label for="tip">Tip:</label> 
+
+    <select id="tip"> 
+
+      <option value="0">0%</option> 
+
+      <option value="10">10%</option> 
+        <option value="15">15%</option> 
+
+      <option value="20">20%</option> 
+
+    </select> 
+
+ 
+
+    <div class="result" id="totalAfterTip">Total After Tip: $0.00</div> 
+
+ 
+
+    <label for="split">Split:</label> 
+
+    <select id="split"> 
+
+      <option value="1">1 Person</option> 
+
+      <option value="2">2 People</option> 
+
+      <option value="3">3 People</option> 
+
+      <option value="4">4 People</option> 
+
+      <option value="5">5 People</option> 
+
+      <option value="6">6 People</option> 
+
+    </select> 
+
+ 
+
+    <div class="result" id="splitAmount">Per Person: $0.00</div> 
+
+ 
+
+    <div class="buttons"> 
+
+      <button onclick="calculateTotal()">Submit</button> 
+
+      <button onclick="resetCalculator()">Reset</button> 
+
+      <button onclick= "<a target="_blank" href="reaction.html">React</a></button>  
+    </div> 
+     <a href="reaction.html">Go to App 2 (Reaction)</a> 
+
+
+  </div> 
+
+ 
+
+  <script> 
+
+    function calculateTotal() { 
+
+      var subtotal = parseFloat(document.getElementById("subtotal").value) || 0; 
+
+      var tipPercent = parseFloat(document.getElementById("tip").value); 
+
+      var split = parseInt(document.getElementById("split").value); 
+
+ 
+
+      var gst = subtotal * 0.05; 
+
+      var afterTax = subtotal + gst; 
+
+      var tipAmount = afterTax * (tipPercent / 100); 
+
+      var totalAfterTip = afterTax + tipAmount; 
+
+    var perPerson = totalAfterTip / split; 
+
+ 
+
+      document.getElementById("taxAmount").innerText = 
+
+        `+ GST(5%): $${gst.toFixed(2)}`; 
+
+ 
+
+      document.getElementById("afterTax").innerText = 
+
+        `After Tax Total: $${afterTax.toFixed(2)}`; 
+
+ 
+
+      document.getElementById("totalAfterTip").innerText = 
+
+        `Total After Tip: $${totalAfterTip.toFixed(2)}`; 
+
+ 
+
+      document.getElementById("splitAmount").innerText = 
+
+        `Per Person: $${perPerson.toFixed(2)}`; 
+
+    } 
+
+ 
+
+    function resetCalculator() { 
+
+      document.getElementById("subtotal").value = ""; 
+
+      document.getElementById("tip").value = "0"; 
+
+      document.getElementById("split").value = "1"; 
+
+ 
+
+      document.getElementById("taxAmount").innerText = "+ GST(5%): $0.00"; 
+
+      document.getElementById("afterTax").innerText = "After Tax Total: $0.00"; 
+
+      document.getElementById("totalAfterTip").innerText = "Total After Tip: $0.00"; 
+
+      document.getElementById("splitAmount").innerText = "Per Person: $0.00"; 
+
+    } 
+
+  </script> 
+
+ 
+
+</body> 
+
+</html> 
+
+ 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.png">
+<style>
+#black{background-color: rgba(0,0,0,1); color:white; padding:5px;}
+</style>
+</head>
+<body>
+
+<h1>HTML Guide</h1>
+<h2>Common HTML Tags outside &lt;body&gt;</h2>
+
+<a class="button" href="inside.html">Go to Inside Page</a>
+
+<table id="headTags">
+<tr>
+<th>&lt;head&gt; Tags</th>
+<th>Definition</th>
+<th>Example(s) if applicable</th>
+</tr>
+</table>
+
+<script>
+const headTags = [
+["&lt;!DOCTYPE html&gt;","Defines HTML document type","No examples*"],
+["&lt;html lang='en'&gt;","Language of page","This page is English"],
+["&lt;meta charset='UTF-8'&gt;","Defines character encoding","No examples*"],
+["&lt;meta http-equiv='refresh' content='0; url=$URL'&gt;","Redirects page","No examples*"],
+["&lt;title&gt;...&lt;/title&gt;","Browser tab title","Screenshot title"],
+["&lt;style&gt;...&lt;/style&gt;","Internal CSS section","<span id='black'>Black cell example</span>"],
+["&lt;link rel='stylesheet' href='styles.css'&gt;","External CSS file","Both pages use styles.css"],
+["&lt;link rel='icon' href='favicon.png'&gt;","Adds favicon","Screenshot favicon"]
+];
+const table2 = document.getElementById("headTags");
+headTags.forEach(tag=>{
+let row = table2.insertRow();
+row.insertCell(0).innerHTML = tag[0];
+row.insertCell(1).innerHTML = tag[1];
+row.insertCell(2).innerHTML = tag[2];
+});
+</script>
+
+</body>
+</html>

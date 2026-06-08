@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>HTML/CSS Guide</h1>
+<h2>Common HTML Tags inside &lt;body&gt;</h2>
+
+<a class="button" href="outside.html">Go to Outside Page</a>
+
+<table id="bodyTags">
+<tr>
+<th>Tag</th>
+<th>Definition</th>
+<th>Example(s)</th>
+</tr>
+</table>
+
+<script>
+const bodyTags = [
+["&lt;img src='link' alt='pic'&gt;","Image","<img src='https://via.placeholder.com/50'>"],
+["&lt;a href='link'&gt;...&lt;/a&gt;","Hyperlink","<a href='#'>Click here</a>"],
+["&lt;p&gt;...&lt;/p&gt;","Paragraph","<p>This is a paragraph.</p><p>Another paragraph</p>"],
+["&lt;ol&gt;<br>&lt;li&gt;...&lt;/li&gt;<br>&lt;/ol&gt;","Ordered list","<ol><li>Item</li></ol>"],
+["&lt;ul&gt;<br>&lt;li&gt;...&lt;/li&gt;<br>&lt;/ul&gt;","Unordered list","<ul><li>Item</li></ul>"],
+["&lt;br&gt; &lt;hr&gt;","Line break & horizontal rule","Line 1<br>Line 2<hr>"],
+["&lt;iframe src='link'&gt;&lt;/iframe&gt;","Embeds webpage/video","<iframe width='140' height='90' src='https://www.youtube.com/embed/dQw4w9WgXcQ'></iframe>"],
+["&lt;span&gt;...&lt;/span&gt;","Inline container","<span style='color:red'>Red text</span>"],
+["&lt;h1&gt;...&lt;/h1&gt; to &lt;h6&gt;","Headings","<h3>Example heading</h3>"],
+["&lt;table&gt;","Tables","This table is an example"]
+];
+const table = document.getElementById("bodyTags");
+bodyTags.forEach(tag=>{
+let row = table.insertRow();
+row.insertCell(0).innerHTML = tag[0];
+row.insertCell(1).innerHTML = tag[1];
+row.insertCell(2).innerHTML = tag[2];
+});
+</script>
+
+</body>
+</html>

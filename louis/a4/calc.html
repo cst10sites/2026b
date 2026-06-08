@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Assignment 4 App 1</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="calc.js"></script>
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <form>
+      <!--Subtotal-->
+      <label>Subtotal: $</label>
+      <br>
+      <input type="text" id="subtotal">
+      <br>
+      <br>
+      <!--Tip Selection-->
+      <label>Tip:</label>
+      <br>
+      <input id="tip0" type="radio" name="tip" value="0" checked> None (0%) <br>
+      <input id="tip10" type="radio" name="tip" value="0.10"> Fair/Bad: (10%) <br>
+      <input id="tip15" type="radio" name="tip" value="0.15"> Good/Average: (15%) <br>
+      <input id="tip20" type="radio" name="tip" value="0.20"> Excellent: (20%) <br>
+      <br>
+      <!--Split-->
+      <label>Split:</label>
+      <br>
+      <input type="number" id="split" value="1">
+      <br>
+      <br>
+      <!--Buttons-->
+      <input type="button" value="submit" onclick="calculate();">
+      <input type="reset" value="reset" onclick="reset();">
+    </form>
+    <!--Outputs-->
+    <p id="afterTax"></p>
+    <p id="afterTip"></p>
+    <p id="perPerson"></p>
+    <p id="totalAmount"></p>
+    <br>
+    <a href="reaction.html">Go to Reaction Timer</a>
+  </body>
+</html>

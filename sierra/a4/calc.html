@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="calc.css">
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<!--need to link to calc.css-->
+</head>
+<body>
+	<div>
+		<h1>Tip Calculator</h1>
+		<form>
+			<label>Subtotal: $</label>
+			<input type="text" id="subtotal">
+			<p id="firstOutput"></p>
+			<!--rest of the input objects belong into one form-->
+
+			<br>
+
+			<label>Tip %</label>
+			<!-- id in select, value in option-->
+			<select id="tipPercent"><!--no input for dropdown-->
+
+		    	<option value="0">No tip (0%)</option>
+		    	<option value="0.05">Cheap (5%)</option>
+		    	<option value="0.10">Fair (10%)</option>
+		    	<option value="0.15">Good (15%)</option>
+		    	<option value="0.20">Exellent (20%)</option>
+
+			</select>
+			<!--Think: ul with li tags (nesting)-->
+		    <br>
+
+		    <p id="tipOutput"></p>
+
+		    <p id="plusTip"></p>
+
+		    <br>
+
+		    <label>Shared Bill</label>
+
+		    <select id="peopleSplit"><!--no input for dropdown-->
+
+		    	<option value="1">1</option>
+		    	<option value="2">2</option>
+		    	<option value="3">3</option>
+		    	<option value="4">4</option>
+		    	<option value="5">5</option>
+		    	<option value="6">6</option>
+		    	<option value="7">7</option>
+		    	<option value="8">8</option>
+		    	<option value="9">9</option>
+		    	<option value="10">10</option>
+		    	<option value="11">11</option>
+		    	<option value="12">12</option>
+		    	<option value="13">13</option>
+		    	<option value="14">14</option>
+		    	<option value="15">15</option>
+
+			</select>
+
+			<p id="plusPeople"></p>
+
+			<br>
+
+		    <input type="button" value="Submit" onclick="calculate();">
+		    <input type="button" value="Reset" onclick="resetIDs();">
+		</form>
+
+		<script src ="calc.js"></script>
+	</div>
+
+	<a  class="button" href="../a4/instruction.html">Reaction Game</a>
+
+</body>
+</html>
